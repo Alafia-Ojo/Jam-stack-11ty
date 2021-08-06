@@ -5,7 +5,7 @@ author: OJO ALAFIA DAVID
 date: 2021-08-04T12:57:26.477Z
 tags:
   - post
-image: /assets/blog/legionella-byce-po5028a.jpg-650-thermofischer.jpg
+image: https://unsplash.com/photos/Vq1sd62o0us
 imageAlt: Legionella
 code:
   lang: html
