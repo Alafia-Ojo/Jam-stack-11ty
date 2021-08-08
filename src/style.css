@@ -1,3 +1,5 @@
+
+
 :root {
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
@@ -12,10 +14,13 @@
   --fw-700: 700;
   --fw-900: 900;
 
+
+
   --clr-primary-200: hsla(169, 70%, 95%, 1);
   --clr-primary-300: hsla(169, 100%, 39%, 1);
   --clr-primary-400: hsla(169, 100%, 26%, 1);
   --clr-primary-500: hsla(169, 100%, 16%, 1);
+  color: hsla(196, 9, 22, 1);
 
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-300: hsla(0, 0%, 50%, 1);
@@ -120,7 +125,7 @@ select {
   /////////////////////// */
 
 body {
-  font-family: var(--ff-body);
+  font-family: poppins;
   font-size: var(--fs-400);
   color: var(--clr-neutral-900);
 }
@@ -180,7 +185,7 @@ section,
 
 .article-title,
 .section-title {
-  color: var(--clr-primary-500);
+  color: #353D40;
 }
 
 .article-title {
@@ -196,8 +201,15 @@ section,
   Header
   /////////////////////// */
 
+  .headerlogo {
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: #003F63;
+  }
+
 .page-header {
-  padding: 2em 0;
+  padding: 1em 0;
+  font-size: 20px;
 }
 
 .page-header__content {
@@ -217,7 +229,7 @@ section,
 
 .nav-list a:focus,
 .nav-list a:hover {
-  color: var(--clr-primary-400);
+  color: #003F63;
   text-decoration: underline;
 }
 
@@ -229,7 +241,13 @@ section,
   --logo-color: currentColor;
   padding: 2em 0;
   color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-500);
+  background-color: #003F63;
+  text-align: center;
+  positon: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
   text-align: center;
 }
 
@@ -258,7 +276,7 @@ section,
 }
 
 .featured-articles {
-  background-color: var(--clr-primary-200);
+  background-color: #003f631e;
 }
 
 .articles__list {
@@ -271,6 +289,7 @@ section,
   /////////////////////// */
 
   .main-article {
+    font-family: poppins;
     margin-bottom: 3rem;
   }
 
@@ -362,15 +381,15 @@ section,
 }
 
 .btn--primary {
-  background: var(--clr-primary-400);
-  color: var(--clr-neutral-100);
+  background: #353D40;
+  color: #fff;
   font-weight: var(--fw-700);
-  border: 2px solid var(--clr-primary-400);
+  
 }
 .btn--primary:hover,
 .btn--primary:focus {
-  background: var(--clr-primary-500);
-  border-color: var(--clr-primary-500); 
+  background: #353D40;
+  border-color: black; 
 }
 
 .btn--neutral {
