@@ -167,6 +167,7 @@ section,
   max-width: 72rem;
 }
 
+
 .container--narrow {
   max-width: 65rem;
 }
@@ -194,6 +195,18 @@ section,
 
 .section-title {
   font-size: var(--fs-600);
+  animation: slidein;
+  animation-duration: 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
 }
 
 
@@ -204,12 +217,16 @@ section,
   .headerlogo {
     font-family: 'Lobster', cursive;
     font-size: 25px;
-    color: #003F63;
+    color: #fff;
   }
 
 .page-header {
-  padding: 1em 0;
+  padding: 10px;
   font-size: 20px;
+  background-color: rgb(46, 70, 136);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .page-header__content {
@@ -223,13 +240,12 @@ section,
 }
 
 .nav-list a {
-  color: var(--clr-neutral-900);
+  color: #fff;
   text-decoration: none;
 }
 
 .nav-list a:focus,
 .nav-list a:hover {
-  color: #003F63;
   text-decoration: underline;
 }
 
@@ -239,11 +255,11 @@ section,
 
 .site-footer {
   --logo-color: currentColor;
-  padding: 2em 0;
+  padding: 20px;
   color: var(--clr-neutral-100);
-  background-color: #003F63;
+  background-color: rgb(46, 70, 136);
   text-align: center;
-  positon: fixed;
+  postion: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -404,3 +420,7 @@ section,
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-900);
 }
+
+------animation-----
+
+
