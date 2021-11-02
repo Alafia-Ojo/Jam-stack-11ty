@@ -124,10 +124,15 @@ select {
   General styling
   /////////////////////// */
 
+html, body{
+  height: 100%;
+}
+
 body {
   font-family: poppins;
   font-size: var(--fs-400);
   color: var(--clr-neutral-900);
+  min-height: 100vh;
 }
 
 h1,
@@ -253,14 +258,21 @@ section,
   Footer
   /////////////////////// */
 
+  .wrapper {
+    min-height: 100%;
+  }
+
 .site-footer {
   --logo-color: currentColor;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--clr-neutral-100);
   background-color: rgb(46, 70, 136);
   text-align: center;
-  postion: fixed;
   left: 0;
+  height: 100px;
   bottom: 0;
   width: 100%;
   color: white;
