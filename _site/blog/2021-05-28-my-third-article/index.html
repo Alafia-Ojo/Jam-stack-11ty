@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Third Article</title>
     <link rel="stylesheet" href="/style.css" />
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4407848827989193"
-     crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4407848827989193"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,7 +75,7 @@
 
     <script>
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+        window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
               document.location.href = "/admin/";
@@ -78,6 +84,5 @@
         });
       }
     </script>
-
   </body>
 </html>

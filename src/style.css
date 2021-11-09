@@ -258,9 +258,9 @@ section,
   Footer
   /////////////////////// */
 
-  .wrapper {
+  /* .wrapper {
     min-height: 100%;
-  }
+  } */
 
 .site-footer {
   --logo-color: currentColor;
@@ -272,7 +272,7 @@ section,
   background-color: rgb(46, 70, 136);
   text-align: center;
   left: 0;
-  height: 100px;
+  height: 0px;
   bottom: 0;
   width: 100%;
   color: white;
