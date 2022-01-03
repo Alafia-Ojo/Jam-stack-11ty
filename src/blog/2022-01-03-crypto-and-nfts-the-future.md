@@ -5,7 +5,8 @@ author: David
 date: 2022-01-03T16:44:47.143Z
 tags:
   - post
-image: /assets/blog/pierre-borthiry-vbcvcwuyvym-unsplash.jpg
+  - featured
+image: https://images.unsplash.com/photo-1615818733733-8b2f0e3c403a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y3J5cHRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
 imageAlt: cryptocurrencies
 ---
 How does somebody make money off an NFT? Isn’t it just a collection of letters corresponding to some sort of graphic? Why are those worth millions of dollars a piece in some cases? These are all normal questions, and the answers to them can come off as long and complex, but the truth is, the answers are also concepts that more and more people are using to make large sums of money.
