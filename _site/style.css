@@ -79,10 +79,20 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  color: white;
+  background: rgb(255, 255, 255);
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
+
+
+h{
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+ 
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -92,8 +102,16 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+  
+  width: 100%;
+ 
+}
+
+.u {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -229,14 +247,37 @@ section,
   }
 
 .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
   font-size: 20px;
-  background-color: rgb(46, 70, 136);
+  background: rgb(43, 42, 42);
   position: sticky;
+  
+  background-repeat: no-repeat;
   margin-bottom: 20px;
   z-index: 999;
   top: 0;
   width: 100%;
+  color: rgb(0, 0, 0);
+}
+.p {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  margin: 30px;
+  color: black;
+}
+
+.p h1 {
+  padding: 10px;
+}
+
+.p-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
 }
 
 .page-header__content {
@@ -250,7 +291,7 @@ section,
 }
 
 .nav-list a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -270,12 +311,12 @@ section,
 .site-footer {
   --logo-color: currentColor;
   width: 100%;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--clr-neutral-100);
-  background-color: rgb(46, 70, 136);
+  background-color: rgb(29, 29, 29);
   text-align: center;
   
 }
@@ -302,6 +343,17 @@ section,
   .hero > div {
     grid-auto-flow: column;
   }
+
+  .container--narrow {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 45em) {
+  
+  .container--narrow {
+    max-width: 100%;
+  }
 }
 
 .featured-articles {
@@ -318,7 +370,10 @@ section,
   /////////////////////// */
 
   .main-article {
-    font-family: poppins;
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    font-family: lato;
     margin-bottom: 3rem;
   }
 
