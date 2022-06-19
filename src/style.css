@@ -7,7 +7,7 @@
   --fs-600: 1.875rem;
   --fs-700: 2rem;
 
-  --ff-body: "Roboto", sans-serif;
+  --ff-body: poppins;
   --ff-heading: "Playfair Display", serif;
 
   --fw-400: 400;
@@ -107,7 +107,7 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
   }
 
   *,
@@ -181,6 +181,8 @@ section,
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap, 1em);
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text-center {
@@ -201,12 +203,13 @@ section,
 .section-title {
   font-size: var(--fs-600);
   animation: slidein;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-play-state: running;
 }
 
 @keyframes slidein {
   from {
-    margin-top: 100%;
+    margin-top: 1%;
   }
 
   to {
@@ -220,16 +223,18 @@ section,
   /////////////////////// */
 
   .headerlogo {
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
+    font-family: monospace;
+    font-size:30px;
     color: #fff;
   }
 
 .page-header {
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
   background-color: rgb(46, 70, 136);
-  position: fixed;
+  position: sticky;
+  margin-bottom: 20px;
+  z-index: 999;
   top: 0;
   width: 100%;
 }
@@ -264,19 +269,15 @@ section,
 
 .site-footer {
   --logo-color: currentColor;
-  padding: 20px;
+  width: 100%;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--clr-neutral-100);
   background-color: rgb(46, 70, 136);
   text-align: center;
-  left: 0;
-  height: 0px;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
+  
 }
 
 /* //////////////////////
