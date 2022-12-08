@@ -4,6 +4,7 @@ description: FFFD
 author: PANDACODES
 date: 2022-12-08T17:22:43.460Z
 tags:
+  - post
   - featured
 image: /assets/blog/mo.png
 imageAlt: panda
