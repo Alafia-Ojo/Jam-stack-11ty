@@ -208,6 +208,12 @@ section,
   font-size: var(--fs-700);
 }
 
+#article-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 .section-title {
   font-size: var(--fs-600);
   animation: slidein;
@@ -325,7 +331,8 @@ section,
   .hero > div {
     grid-auto-flow: column;
   }
-
+  
+  
   .container--narrow {
     max-width: 100%;
   }
@@ -335,6 +342,15 @@ section,
   .container--narrow {
     max-width: 100%;
   }
+  
+  .p {
+    
+    flex-direction: column;
+  }
+
+ 
+  
+  
 }
 
 .featured-articles {
@@ -367,10 +383,11 @@ section,
   text-align: justify;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .main-article_content {
-  width: 55%;
+  width: 70%;
 }
 
 .main-article__figure figcaption {
