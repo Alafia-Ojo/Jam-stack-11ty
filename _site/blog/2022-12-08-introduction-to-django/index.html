@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTRODUCTION TO DJANGO</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4407848827989193"
+     crossorigin="anonymous"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YPE2ERH7H0"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YPE2ERH7H0");
+    </script>
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+
+
+<header class="page-header header-div ">
+ <div class="p">
+   <h1>PANDABLOGS</h1>
+   <div>
+   <nav>
+    <ul role="list" class="nav-list p-nav">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/blog/">Blog</a>
+      </li>
+    </ul>
+  </nav> 
+</div>
+ </div>
+</header>
+
+
+
+<!-- <nav>
+  <ul role="list" class="nav-list flex-group">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blog/">Blog</a>
+    </li>
+  </ul>
+</nav> -->
+    <main>
+      
+<article class="main-article">
+  <div class="container container--narrow flow">
+<div class="u">
+   <u> <h1 class="article-title">INTRODUCTION TO DJANGO</h1></u>
+    <figure class="main-article__figure">
+  <div>   <img src="https://images.unsplash.com/photo-1580121441575-41bcb5c6b47c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGphbmdvfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="pro-drango novel" loading="lazy"/></div> 
+      <figcaption>pro-drango novel</figcaption>
+    </figure>
+  </div>
+  <div class="main-article_content_wrapper">
+  <div class="main-article_content">
+    <h1><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction#what_is_django" title="Permalink to What is Django?">What is Django?</a></h1>
+<p>Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great documentation, and many options for free and paid-for support.</p>
+<p>Django helps you write software that is:</p>
+<ul>
+<li>
+<p>Complete</p>
+<p>Django follows the &quot;Batteries included&quot; philosophy and provides almost everything developers might want to do &quot;out of the box&quot;. Because everything you need is part of the one &quot;product&quot;, it all works seamlessly together, follows consistent design principles, and has extensive and <a href="https://docs.djangoproject.com/en/stable/">up-to-date documentation</a>.</p>
+</li>
+<li>
+<p>Versatile</p>
+<p>Django can be (and has been) used to build almost any type of website — from content management systems and wikis, through to social networks and news sites. It can work with any client-side framework, and can deliver content in almost any format (including HTML, RSS feeds, JSON, XML, etc).</p>
+<p>Internally, while it provides choices for almost any functionality you might want (e.g. several popular databases, templating engines, etc.), it can also be extended to use other components if needed.</p>
+</li>
+<li>
+<p>Secure</p>
+<p>Django helps developers avoid many common security mistakes by providing a framework that has been engineered to &quot;do the right things&quot; to protect the website automatically. For example, Django provides a secure way to manage user accounts and passwords, avoiding common mistakes like putting session information in cookies where it is vulnerable (instead cookies just contain a key, and the actual data is stored in the database) or directly storing passwords rather than a password hash.</p>
+<p><em>A password hash is a fixed-length value created by sending the password through a <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographic hash function</a>. Django can check if an entered password is correct by running it through the hash function and comparing the output to the stored hash value. However due to the &quot;one-way&quot; nature of the function, even if a stored hash value is compromised it is hard for an attacker to work out the original password.</em></p>
+<p>Django enables protection against many vulnerabilities by default, including SQL injection, cross-site scripting, cross-site request forgery and <a href="https://developer.mozilla.org/en-US/docs/Glossary/Clickjacking">clickjacking</a> (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Website_security">Website security</a> for more details of such attacks).</p>
+</li>
+<li>
+<p>Scalable</p>
+<p>Django uses a component-based &quot;<a href="https://en.wikipedia.org/wiki/Shared_nothing_architecture">shared-nothing</a>&quot; architecture (each part of the architecture is independent of the others, and can hence be replaced or changed if needed). Having a clear separation between the different parts means that it can scale for increased traffic by adding hardware at any level: caching servers, database servers, or application servers. Some of the busiest sites have successfully scaled Django to meet their demands (e.g. Instagram and Disqus, to name just two).</p>
+</li>
+<li>
+<p>Maintainable</p>
+<p>Django code is written using design principles and patterns that encourage the creation of maintainable and reusable code. In particular, it makes use of the Don't Repeat Yourself (DRY) principle so there is no unnecessary duplication, reducing the amount of code. Django also promotes the grouping of related functionality into reusable &quot;applications&quot; and, at a lower level, groups related code into modules (along the lines of the <a href="https://developer.mozilla.org/en-US/docs/Glossary/MVC">Model View Controller (MVC)</a> pattern).</p>
+</li>
+<li>
+<p>Portable</p>
+<p>Django is written in Python, which runs on many platforms. That means that you are not tied to any particular server platform, and can run your applications on many flavors of Linux, Windows, and macOS. Furthermore, Django is well-supported by many web hosting providers, who often provide specific infrastructure and documentation for hosting Django sites.</p>
+</li>
+</ul>
+<h2><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction#where_did_it_come_from" title="Permalink to Where did it come from?">Where did it come from?</a></h2>
+<p>Django was initially developed between 2003 and 2005 by a web team who were responsible for creating and maintaining newspaper websites. After creating a number of sites, the team began to factor out and reuse lots of common code and design patterns. This common code evolved into a generic web development framework, which was open-sourced as the &quot;Django&quot; project in July 2005.</p>
+<p><img src="https://images.unsplash.com/photo-1580121521203-ab94824d9382?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGphbmdvfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt="" title="Django book"></p>
+<pre><code class="language-python">pip3 install Django
+</code></pre>
+
+  </div>
+</div>
+  </div>
+</article>
+
+    </main>
+    <div class="wrapper"></div>
+<footer class="site-footer">
+  <!-- <div class="headerlgo">
+    <h1>SSSS</h1>  
+  </div> -->
+  <p>
+    © <span id="copyright-year"></span> <span>PandaCodes</span>. All rights
+    reserved.
+  </p>
+  <p>
+    <img
+      class="social-links"
+      src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+      alt="github-link"
+      style="color: white"
+    />
+  </p>
+</footer>
+<script>
+  document.querySelector("#copyright-year").innerText =
+    new Date().getFullYear();
+</script>
+
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
