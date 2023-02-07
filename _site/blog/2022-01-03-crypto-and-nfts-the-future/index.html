@@ -37,6 +37,7 @@
 <header class="page-header header-div ">
  <div class="p">
    <h1>PANDABLOGS</h1>
+   <div>
    <nav>
     <ul role="list" class="nav-list p-nav">
       <li>
@@ -47,6 +48,7 @@
       </li>
     </ul>
   </nav> 
+</div>
  </div>
 </header>
 
@@ -73,22 +75,40 @@
       <figcaption>cryptocurrencies</figcaption>
     </figure>
   </div>
+  <div class="main-article_content_wrapper">
+  <div class="main-article_content">
     <p>How does somebody make money off an NFT? Isn’t it just a collection of letters corresponding to some sort of graphic? Why are those worth millions of dollars a piece in some cases? These are all normal questions, and the answers to them can come off as long and complex, but the truth is, the answers are also concepts that more and more people are using to make large sums of money.</p>
 <p>Do you want to continue to be one of the puzzled onlookers watching the blockchain revolution pass them by? Or do you want to start educating yourself so that you can profit off one of today’s most equitable and interesting side hustles. According to <a href="https://reviewlution.ca/resources/cryptocurrency-canada-statistics/#:~:text=According%20to%20cryptocurrency%20statistics%20from,and%20Dash%20(0.5%25).">Statista,</a> cryptocurrency statistics from Canada in 2019 had 3.98 per cent of Canadians using Bitcoin. That is an insanely large portion of a country’s population to have money in a coin that’s long been considered controversial and sketchy by financiers. And in the years since those stats were reported, the use of crypto and the number of coins has only increased. NFTs have also grown immensely in popularity.</p>
 
   </div>
+</div>
+  </div>
 </article>
 
     </main>
-    
-<div class="wrapper"></div>
+    <div class="wrapper"></div>
 <footer class="site-footer">
   <!-- <div class="headerlgo">
     <h1>SSSS</h1>  
   </div> -->
-    <p>© 2020 <span>PandaCodes</span>. All rights reserved.</p>
-   <p><img class="social-links" src="https://img.icons8.com/ios-glyphs/30/000000/github.png" style="color: white;"/></p> 
-   </footer>
+  <p>
+    © <span id="copyright-year"></span> <span>PandaCodes</span>. All rights
+    reserved.
+  </p>
+  <p>
+    <img
+      class="social-links"
+      src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+      alt="github-link"
+      style="color: white"
+    />
+  </p>
+</footer>
+<script>
+  document.querySelector("#copyright-year").innerText =
+    new Date().getFullYear();
+</script>
+
 
     <script>
       if (window.netlifyIdentity) {

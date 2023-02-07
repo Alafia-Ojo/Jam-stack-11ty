@@ -37,6 +37,7 @@
 <header class="page-header header-div ">
  <div class="p">
    <h1>PANDABLOGS</h1>
+   <div>
    <nav>
     <ul role="list" class="nav-list p-nav">
       <li>
@@ -47,6 +48,7 @@
       </li>
     </ul>
   </nav> 
+</div>
  </div>
 </header>
 
@@ -73,6 +75,8 @@
       <figcaption>pro-drango novel</figcaption>
     </figure>
   </div>
+  <div class="main-article_content_wrapper">
+  <div class="main-article_content">
     <h1><a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction#what_is_django" title="Permalink to What is Django?">What is Django?</a></h1>
 <p>Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great documentation, and many options for free and paid-for support.</p>
 <p>Django helps you write software that is:</p>
@@ -112,18 +116,34 @@
 </code></pre>
 
   </div>
+</div>
+  </div>
 </article>
 
     </main>
-    
-<div class="wrapper"></div>
+    <div class="wrapper"></div>
 <footer class="site-footer">
   <!-- <div class="headerlgo">
     <h1>SSSS</h1>  
   </div> -->
-    <p>© 2020 <span>PandaCodes</span>. All rights reserved.</p>
-   <p><img class="social-links" src="https://img.icons8.com/ios-glyphs/30/000000/github.png" style="color: white;"/></p> 
-   </footer>
+  <p>
+    © <span id="copyright-year"></span> <span>PandaCodes</span>. All rights
+    reserved.
+  </p>
+  <p>
+    <img
+      class="social-links"
+      src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+      alt="github-link"
+      style="color: white"
+    />
+  </p>
+</footer>
+<script>
+  document.querySelector("#copyright-year").innerText =
+    new Date().getFullYear();
+</script>
+
 
     <script>
       if (window.netlifyIdentity) {

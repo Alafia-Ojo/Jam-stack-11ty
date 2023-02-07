@@ -37,6 +37,7 @@
 <header class="page-header header-div ">
  <div class="p">
    <h1>PANDABLOGS</h1>
+   <div>
    <nav>
     <ul role="list" class="nav-list p-nav">
       <li>
@@ -47,6 +48,7 @@
       </li>
     </ul>
   </nav> 
+</div>
  </div>
 </header>
 
@@ -118,15 +120,29 @@
 </div>
 
     </main>
-    
-<div class="wrapper"></div>
+    <div class="wrapper"></div>
 <footer class="site-footer">
   <!-- <div class="headerlgo">
     <h1>SSSS</h1>  
   </div> -->
-    <p>© 2020 <span>PandaCodes</span>. All rights reserved.</p>
-   <p><img class="social-links" src="https://img.icons8.com/ios-glyphs/30/000000/github.png" style="color: white;"/></p> 
-   </footer>
+  <p>
+    © <span id="copyright-year"></span> <span>PandaCodes</span>. All rights
+    reserved.
+  </p>
+  <p>
+    <img
+      class="social-links"
+      src="https://img.icons8.com/ios-glyphs/30/000000/github.png"
+      alt="github-link"
+      style="color: white"
+    />
+  </p>
+</footer>
+<script>
+  document.querySelector("#copyright-year").innerText =
+    new Date().getFullYear();
+</script>
+
 
     <script>
       if (window.netlifyIdentity) {
