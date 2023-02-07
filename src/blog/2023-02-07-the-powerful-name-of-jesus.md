@@ -21,4 +21,4 @@ In addition to providing hope, the resurrection of Jesus also offers forgiveness
 
 In conclusion, the message of the resurrection of Jesus is one of hope, forgiveness, and new life. It is a message that brings joy to people all over the world, and it is a message that is relevant and needed today more than ever. The fact that Jesus is alive means that people can find peace, hope, and joy, no matter what they are facing in their lives. This Easter, let us celebrate the fact that Jesus is alive and that He is the hope of the world.
 
-![#JesusIsAlive](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)
+![#JesusIsAlive]()
