@@ -202,6 +202,7 @@ section,
 .article-title,
 .section-title {
   color: #353d40;
+  text-align: center;
 }
 
 .article-title {
@@ -253,7 +254,8 @@ section,
 .p {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  
+  justify-content: space-around;
 }
 
 .p h1 {
@@ -348,7 +350,9 @@ section,
     flex-direction: column;
   }
 
- 
+ .main-article_content {
+  width: 100% !important ;
+ }
   
   
 }
@@ -383,7 +387,7 @@ section,
   text-align: justify;
   align-items: center;
   justify-content: center;
-  width: 100%;
+ 
 }
 
 .main-article_content {
