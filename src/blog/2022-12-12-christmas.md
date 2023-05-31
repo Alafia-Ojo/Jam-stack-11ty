@@ -6,7 +6,7 @@ date: 2022-12-12T10:21:18.743Z
 tags:
   - post
   - featured
-image: /assets/blog/mo.png
+image: https://images.pexels.com/photos/5802137/pexels-photo-5802137.jpeg?auto=compress&cs=tinysrgb&w=1600
 imageAlt: hello
 portfolio: /assets/blog/index.html
 ---
