@@ -15,8 +15,21 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image",  media_library: {
+            config: {
+              multiple: false,
+              preview_images: true,
+              size_limit: 500000000,
+  
+            }
+          } }
+      - {
+          label: "Image caption",
+          name: "imageAlt",
+          widget: "string"
+         
+        }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Color', name: 'color', widget: 'color', enableAlpha: true, allowInput: true }
+
       - { label: "Upload Porfolio", name: "portfolio", widget: "file" }
-      
